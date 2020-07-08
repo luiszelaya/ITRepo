@@ -16,7 +16,8 @@ namespace JobBoard.Migrations
                         Job_Description = c.String(),
                         Job_CreatedAt = c.DateTime(nullable: false),
                         Job_ExpiresAt = c.DateTime(nullable: false),
-                    })
+                        Job_Comments = c.String(),
+                })
                 .PrimaryKey(t => t.id);
             
         }

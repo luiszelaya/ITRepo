@@ -137,6 +137,10 @@
     <Compile Include="Migrations\202007080632330_InitialCreate.Designer.cs">
       <DependentUpon>202007080632330_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007080742527_Jobs.cs" />
+    <Compile Include="Migrations\202007080742527_Jobs.Designer.cs">
+      <DependentUpon>202007080742527_Jobs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Jobs.cs" />
     <Compile Include="Controllers\JobsController.cs" />
@@ -197,6 +201,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007080632330_InitialCreate.resx">
       <DependentUpon>202007080632330_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007080742527_Jobs.resx">
+      <DependentUpon>202007080742527_Jobs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
