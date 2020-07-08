@@ -45,7 +45,7 @@ namespace JobBoard.Models
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,Job_Title,Job_Description,Job_CreatedAt,Job_ExpiresAt")] Jobs jobs)
+        public ActionResult Create([Bind(Include = "id,Job_Title,Job_Description,Job_CreatedAt,Job_ExpiresAt, Job_Comments")] Jobs jobs)
         {
             if (ModelState.IsValid)
             {
@@ -77,7 +77,7 @@ namespace JobBoard.Models
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,Job_Title,Job_Description,Job_CreatedAt,Job_ExpiresAt")] Jobs jobs)
+        public ActionResult Edit([Bind(Include = "id,Job_Title,Job_Description,Job_CreatedAt,Job_ExpiresAt, Job_Comments")] Jobs jobs)
         {
             if (ModelState.IsValid)
             {
