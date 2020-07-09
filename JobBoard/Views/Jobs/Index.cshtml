@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<JobBoard.Models.Jobs>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Jobs Catalog";
 }
 
 <h2>Index</h2>
@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Job_Title)
